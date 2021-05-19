@@ -177,7 +177,7 @@ body {
 
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 449px) {
   .footer-navbar .navbar-left :last-child a {
     display: block;
     margin-top: 25px;
