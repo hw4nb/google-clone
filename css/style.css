@@ -147,6 +147,8 @@ body {
 }
 
 .footer-navbar .navbar-left a:link,
+.footer-navbar .navbar-left a:visited,
+.footer-navbar .navbar-right a:link,
 .footer-navbar .navbar-right a:visited {
   padding: 0 15px;
   text-decoration: none;
