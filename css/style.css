@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar ul a:link,
+.navbar ul a:visited {
+  font-size: 13px;
+  display: block;
+  text-decoration: none;
+  padding: 10px 8px;
+  color: #212121;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  filter: invert(42%) sepia(13%) saturate(194%) hue-rotate(173deg) brightness(88%) contrast(92%);
+  width: 16px;
+  margin: 0 5px 0 15px;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.menu-photo {
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 4px solid transparent;
+}
+
+.menu-photo:hover {
+  border: 4px solid #F0F0F0;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.main-logo {
+  margin-bottom: 20px;
+}
+
+.main-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  min-width: 400px;
+}
+
+.main-input input {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  width: 584px;
+  height: 48px;
+  margin: 0 20px;
+  border-radius: 50px;
+  border: 1px solid #dfe1e5;
+  outline: none;
+  padding: 0 40px;
+}
+
+.main-input input:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.main-input .micro-icon {
+  width: 14px;
+  margin-left: -55px;
+}
+
+.main-buttons {
+  margin-top: 20px;
+  display: flex;
+}
+
+.main-buttons button {
+  font-size: 14px;
+  margin: 5px;
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+  padding: 10px 16px;
+  background-color: #F8F9FA;
+  cursor: pointer;
+  color: #202124;
+}
+
+.main-buttons button:hover {
+  border: 1.5px solid #DADCE0;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #F2F2F2;
+  border-top: 1px solid #DADCE0;
+}
+
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 25px;
+}
+
+.footer-navbar .navbar-left,
+.footer-navbar .navbar-right {
+  display: flex;
+  list-style: none;
+}
+
+.footer-navbar .navbar-left a,
+.footer-navbar .navbar-right a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: #70757A;
+}
+
+@media only screen and (max-width: 675px) {
+  .footer-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-navbar .navbar-right {
+    margin-top: 25px;
+  }
+
+  .footer-navbar .navbar-left {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+  .footer-navbar .navbar-left :last-child a {
+    display: block;
+    margin-top: 25px;
+  }
+}
